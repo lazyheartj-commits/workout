@@ -1,6 +1,6 @@
 # Iron Week Log
 
-A 7-day weightlifting log for tracking sets, reps and weight. It includes a 30-45 minute program with no back squats or deadlifts. It runs in any browser, can be installed on your phone's home screen, and works offline once it has loaded.
+A weightlifting log for planning your own week. Every day starts blank. You add exercises from a list of about 85, grouped by muscle, or type in your own, then log weight and reps for each set. The week strip at the top shows which muscle groups each day covers. The app can be installed on your phone's home screen and works offline once it has loaded.
 
 ## Put it on GitHub Pages (free)
 
@@ -14,8 +14,16 @@ A 7-day weightlifting log for tracking sets, reps and weight. It includes a 30-4
 - **iPhone (Safari):** open the link, tap Share, then tap **Add to Home Screen**.
 - **Android (Chrome):** open the link, tap the ⋮ menu, then tap **Install app** or **Add to Home screen**.
 
+## Using it
+
+- Tap a day at the top, then use **Add an exercise** to choose a muscle group and an exercise. To add something that isn't listed, pick **Custom exercise…** at the bottom of the exercise list.
+- The app opens with the 7-day program loaded. Use **Load 7-day program** to bring it back, or **Clear week** to start from scratch.
+- You can name each day, for example "Push" or "Rest".
+- Use **+ Set**, **− Set**, **↑** and **↓** to adjust your sets and the exercise order.
+- Check off sets as you finish them, then tap **Finish workout**. Your best set is saved as "Last time" for next week.
+
 ## Notes
 
 - Your logs are saved on the device and browser you use. They don't sync between devices.
-- To change the program, edit the `PLAN` list near the top of the `<script>` in `index.html`. Each exercise is `["Name", sets, "reps"]`.
-- After editing the program, change `ironweek-v3` to a new number such as `ironweek-v4` so the app loads the new plan. This also clears the old log. If an update doesn't show up, change `CACHE` in `sw.js` too.
+- To add more choices to the exercise list, edit `LIB` in `index.html`. Each entry is `["Name", default sets, "default reps"]`. Cardio & Mobility entries are `["Name", default minutes]`.
+- If an update doesn't show up after you upload new files, change `CACHE` in `sw.js` to a new name, such as `iron-week-v9`.

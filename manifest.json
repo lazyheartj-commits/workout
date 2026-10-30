@@ -1,7 +1,7 @@
 {
   "name": "Iron Week Log",
   "short_name": "Iron Week",
-  "description": "7-day weightlifting log for tracking sets, reps and weight.",
+  "description": "Build your own weekly lifting plan and log sets, reps and weight.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
